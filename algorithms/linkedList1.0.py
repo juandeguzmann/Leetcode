@@ -10,12 +10,12 @@ class linkedList:
     
     def append(self, value):
         new_node = Node(value)
-        if not self.head: #if self.head is empty to the following
+        if self.head is None: #if self.head is empty to the following
             self.head = new_node
             return
         
         current = self.head
-        while current.next: #while the current.next is not empty, keep looping
+        while current.next is not None: #while the current.next is not empty, keep looping
             current = current.next #Update current to the next node
         current.next = new_node #Once current.next is None, break out of the loop and set current.next as the new node.
 

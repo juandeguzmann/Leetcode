@@ -31,3 +31,4 @@ ll = linkedList()
 ll.append(1)
 ll.append(2)
 ll.display()
+
